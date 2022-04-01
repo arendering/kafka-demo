@@ -1,0 +1,14 @@
+kafka:
+  producer:
+    topic: kafka-demo
+    bootstrap-servers: localhost:9092
+    client-id: sample-producer
+    key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    value-serializer: org.apache.kafka.common.serialization.StringSerializer
+  consumer:
+    topic: kafka-demo
+    bootstrap-servers: localhost:9092
+    client-id: sample-consumer
+    group-id: sample-group
+    key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
